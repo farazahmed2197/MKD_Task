@@ -11,7 +11,6 @@ router.post("/add", async (req, res) => {
       image: req.body.image
       
     });
-    console.log("Product Created: ", newProduct);
 
     return res.status(200).json({
       data: newProduct,

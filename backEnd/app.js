@@ -43,7 +43,6 @@ app.use('/orders', orders);
 
 //Error Handlers    ///////////
 app.use((req, res, next) => {
-    console.log(`${pid}`)
     const error = new Error('not found');
     error.status = 404;
     next(error);
